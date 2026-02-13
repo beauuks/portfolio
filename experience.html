@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Kanthad Sangudomlert</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+        * {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace !important;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #c0c0c0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .window {
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .title-bar {
+            background: linear-gradient(to right, #000080, #1084d0);
+        }
+
+        .window-body {
+            padding: 20px;
+        }
+
+        .back-button {
+            margin-bottom: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .company-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000080;
+            margin-bottom: 5px;
+        }
+
+        .job-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 3px;
+        }
+
+        .date {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .content-section {
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .content-section ul {
+            margin-left: 20px;
+        }
+
+        .content-section li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">💼 Professional Experience</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="window-body">
+                <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
+
+                <fieldset class="experience-item">
+                    <legend>LightBlue Environmental Consulting Co.,Ltd.</legend>
+                    <div class="company-name">LightBlue Environmental Consulting</div>
+                    <div class="job-title">Data Engineer Intern</div>
+                    <div class="date">January 2026 - Present</div>
+                    <div class="content-section">
+                        <ul>
+                            <li>Automated an end-to-end data pipeline to transform manual food waste tracking into automated, client-ready Excel reports</li>
+                            <li>Developing a backend API to connect a frontend with internal DBs for self-service data retrieval</li>
+                            <li>Building a middleware solution to streamline data access for the consulting team and reduce manual engineering overhead</li>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset class="experience-item">
+                    <legend>Advance Energy Plus Co., LTD</legend>
+                    <div class="company-name">
+                        <a href="https://www.aep.co.th/en/" target="_blank" style="color: #000080; text-decoration: none;">Advance Energy Plus →</a>
+                    </div>
+                    <div class="job-title">Data Shadowing & Internship</div>
+                    <div class="date">June 2023 - July 2023</div>
+                    <div class="content-section">
+                        <ul>
+                            <li>Conducted data collection, preprocessing, and trend analysis on energy consumption datasets</li>
+                            <li>Collaborated with large organizations including Krungsri Bank to support sustainable energy initiatives</li>
+                            <li>Applied data-driven insights to real-world energy optimization and finance use cases</li>
+                            <li>Gained hands-on experience in the renewable energy sector and corporate data practices</li>
+                            <li>Assisted in preparing data reports for stakeholder presentations</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

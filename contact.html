@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kanthad Sangudomlert</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+        * {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace !important;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #c0c0c0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .window {
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .title-bar {
+            background: linear-gradient(to right, #000080, #1084d0);
+        }
+
+        .window-body {
+            padding: 20px;
+        }
+
+        .back-button {
+            margin-bottom: 20px;
+        }
+
+        .content-section {
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .contact-card {
+            padding: 20px;
+            background: #fff;
+            border: 2px solid #000;
+            box-shadow: 3px 3px 0px #000;
+            text-align: center;
+        }
+
+        .contact-icon {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .contact-value {
+            font-size: 14px;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+        .contact-value a {
+            color: #000080;
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000080;
+            margin-bottom: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #000080;
+            color: #fff;
+            border: 2px solid #000;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 3px 3px 0px #000;
+            margin-top: 20px;
+            transition: transform 0.1s;
+        }
+
+        .cta-button:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0px #000;
+        }
+
+        .cta-button:active {
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px #000;
+        }
+
+        .availability-status {
+            padding: 15px;
+            background: #d4f4dd;
+            border: 2px solid #2d8647;
+            border-left: 5px solid #2d8647;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+
+        .status-indicator {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #2d8647;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">📧 Contact Information</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="window-body">
+                <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
+
+                <fieldset>
+                    <legend>Get In Touch</legend>
+                    <div class="content-section">
+                        <p>
+                            Currently based in <strong>Madrid, Spain</strong>. Eligible to sign internship agreements 
+                            via IE University. Open to data science and data engineering internship opportunities, 
+                            particularly in roles focused on sustainability, energy systems, and large-scale data infrastructure.
+                        </p>
+                        <p>
+                            I'm always interested in discussing new projects, collaborations, or opportunities. 
+                            Feel free to reach out through any of the channels below!
+                        </p>
+                    </div>
+
+                    <div class="availability-status">
+                        <span class="status-indicator"></span>
+                        <strong>AVAILABLE FOR INTERNSHIPS</strong> - Currently seeking summer 2026 and fall 2026 opportunities
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-top: 20px;">
+                    <legend>Contact Details</legend>
+                    <div class="contact-grid">
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">
+                                <a href="mailto:ksangudomler.ieu2023@student.ie.edu">ksangudomler.ieu2023@student.ie.edu</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-label">LinkedIn</div>
+                            <div class="contact-value">
+                                <a href="https://www.linkedin.com/in/kanthad-sangudomlert" target="_blank">kanthad-sangudomlert</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-label">GitHub</div>
+                            <div class="contact-value">
+                                <a href="https://github.com/beauuks" target="_blank">@beauuks</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="text-align: center;">
+                        <form action="https://formspree.io/f/xreapvvj" method="POST" class="contact-form">
+                            <br><br>
+                            <p class="contact-title"><strong>Contact me</strong></p><br>
+                            <label style="font-size: 13px;">Your email:</label><br><br>
+                            <input type="email" name="email" required><br><br>
+                            
+                            <label style="font-size: 13px;">Your message:</label><br><br>
+                            <textarea name="message" required></textarea><br>
+                            
+                            <button type="submit" class="cta-button">Send Message</button>
+                        </form>
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-top: 20px;">
+                    <legend>Interests & Looking For</legend>
+                    <div class="content-section">
+                        <p><strong>Preferred Roles:</strong></p>
+                        <ul>
+                            <li>Data Engineering Intern</li>
+                            <li>Machine Learning Engineer Intern</li>
+                            <li>Backend Software Engineer (Data-focused)</li>
+                        </ul>
+                        <p><strong>Preferred Industries:</strong></p>
+                        <ul>
+                            <li>FinTech & Financial Services</li>
+                            <li>Big Data & Cloud Computing</li>
+                            <li>Streaming & Media</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

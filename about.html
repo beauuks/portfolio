@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Kanthad Sangudomlert</title>
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&display=swap');
+
+        * {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace !important;
+        }
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #c0c0c0;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .window {
+            margin-bottom: 20px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+        }
+
+        .title-bar {
+            background: linear-gradient(to right, #000080, #1084d0);
+        }
+
+        .window-body {
+            padding: 20px;
+        }
+
+        .window-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #000080;
+            margin-bottom: 8px;
+        }
+
+        .back-button {
+            margin-bottom: 20px;
+        }
+
+        .content-section {
+            line-height: 1.8;
+            font-size: 13px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            padding: 10px;
+            background: #fff;
+            border: 2px solid #000;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        h2 {
+            color: #000080;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="window">
+            <div class="title-bar">
+                <div class="title-bar-text">👤 About Me</div>
+                <div class="title-bar-controls">
+                    <button aria-label="Minimize"></button>
+                    <button aria-label="Maximize"></button>
+                    <button aria-label="Close"></button>
+                </div>
+            </div>
+            
+            <div class="window-body">
+                <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
+
+                <fieldset>
+                    <legend class="window-title">About Me</legend>
+                    <div class="content-section">
+                        <p>
+                            I am a third-year Data Science and Engineer student at IE University, currently based in Madrid, Spain. 
+                            I have a strong academic background in data science, machine learning, and algorithmic problem solving, 
+                            with hands-on experience in predictive modeling, ETL pipelines, and parallel computing.
+                        </p>
+                        <p>
+                            I am eager to apply my technical skills in real-world data science and data engineering projects, 
+                            particularly in areas related to sustainability, energy, and large-scale data systems.
+                        </p>
+                        <p>
+                            My academic journey has equipped me with both theoretical knowledge and practical skills in building 
+                            robust data infrastructures, implementing machine learning models, and developing distributed systems 
+                            that can handle complex computational challenges.
+                        </p>
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-top: 20px;">
+                    <legend class="window-title">Technical Skills</legend>
+                    <div class="skills-grid">
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">Bash</div>
+                        <div class="skill-item">SQL</div>
+                        <div class="skill-item">Java</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Apache Spark</div>
+                        <div class="skill-item">Machine Learning</div>
+                        <div class="skill-item">Deep Learning</div>
+                        <div class="skill-item">Data Modeling</div>
+                        <div class="skill-item">OOP</div>
+                        <div class="skill-item">ETL Pipelines</div>
+                    </div>
+                </fieldset>
+
+                <fieldset style="margin-top: 20px;">
+                    <legend class="window-title">Areas of Interest</legend>
+                    <div class="content-section">
+                        <ul>
+                            <li><strong>Sustainability & Energy Systems:</strong> Passionate about leveraging data to drive sustainable solutions and optimize energy consumption</li>
+                            <li><strong>Distributed Systems:</strong> Building scalable architectures for high-performance computing</li>
+                            <li><strong>Big Data Technologies:</strong> Processing and analyzing large-scale datasets using modern tools</li>
+                            <li><strong>Machine Learning Applications:</strong> Developing predictive models for real-world problems</li>
+                        </ul>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
